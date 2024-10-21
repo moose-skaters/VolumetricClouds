@@ -2515,35 +2515,6 @@ MonoBehaviour:
   - {fileID: -6986439033276347832}
   - {fileID: 7661433629699211007}
   - {fileID: 9068438652805697010}
-  - {fileID: 58323262816906421}
---- !u!114 &58323262816906421
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
-  m_Name: ColorAdjustments
-  m_EditorClassIdentifier: 
-  active: 1
-  postExposure:
-    m_OverrideState: 0
-    m_Value: 0
-  contrast:
-    m_OverrideState: 0
-    m_Value: 0
-  colorFilter:
-    m_OverrideState: 0
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
-  hueShift:
-    m_OverrideState: 0
-    m_Value: 0
-  saturation:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!114 &495248077932747983
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -5195,7 +5166,7 @@ MonoBehaviour:
     m_Value: 157061
   _NumPrimarySteps:
     m_OverrideState: 1
-    m_Value: 16
+    m_Value: 128
   _NumLightSteps:
     m_OverrideState: 1
     m_Value: 6
@@ -5216,7 +5187,7 @@ MonoBehaviour:
     m_Value: 2
   _CloudFirstLayerdDensityPow:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 1
   _CloudDensitySecondLayer:
     m_OverrideState: 1
     m_Value: 0
@@ -5240,10 +5211,10 @@ MonoBehaviour:
     m_Value: 0
   _ShapeScaleFirstLayer:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: 4
   _ShapeFactorFirstLayer:
     m_OverrideState: 1
-    m_Value: 0.72
+    m_Value: 0.7
   _ShapeScaleSecondLayer:
     m_OverrideState: 1
     m_Value: 4
@@ -5354,15 +5325,33 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CumulusCloudTypeHeightCurve:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value:
       serializedVersion: 2
-      m_Curve: []
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 1
+        outSlope: 1
+        tangentMode: 34
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
   AltoStratusDensityCurve:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value:
       serializedVersion: 2
       m_Curve:
@@ -5406,7 +5395,7 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   AltoStratusErosionCurve:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value:
       serializedVersion: 2
       m_Curve:
@@ -5495,7 +5484,7 @@ MonoBehaviour:
     m_Value: 1
   _AmbientLuminanceIntensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 2
   _TemporalAccumulationFactor:
     m_OverrideState: 1
     m_Value: 0.95
